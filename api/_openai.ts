@@ -6,7 +6,7 @@ const openai = new OpenAI()
 
 export async function getGPTResponse(messages: ChatCompletionMessageParam[]) {
   return await openai.chat.completions.create({
-    model: 'gpt-4-turbo',
+    model: 'gpt-4',
     messages,
   })
 }
